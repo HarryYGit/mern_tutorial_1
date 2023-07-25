@@ -1,17 +1,25 @@
-
 {
-  "scripts": { 
-    "start": "node backend/server.js", 
+  "scripts": {
+    "start": "node backend/server.js",
     "server": "nodemon backend/server.js"
   },
-
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^7.4.0"
+    "mongoose": "^7.4.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "name": "mern_tutorial",
+  "version": "1.0.0",
+  "description": "my mern_lesson_tutorial",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "mern_tutotial_1"
+  },
+  "author": "harry",
+  "license": "ISC"
 }
