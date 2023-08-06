@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import GoalForm from '../components/GoalForm.jsx'
-import GoalItem from '../components/GoalItem.jsx'
+import GoalForm from '../components/goalform'
+import GoalItem from '../components/goalitem'
 import Spinner from '../components/spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
 
@@ -36,19 +35,32 @@ function Dashboard() {
     return <Spinner />
   }
 
-// type rfce to create function
-//import React from 'react'
+ 
 
-function Dashboard() {
-=======
-// type rfce to create function
-//import React from 'react'
-
-function Dashboard() {
->>>>>>> parent of c403817 (update frontend functions)
   return (
-    <div>Dashboard</div>
+    <>
+      <section className='heading'>
+        <h1>Welcome {user && user.name}</h1>
+        <p>Goals Dashboard</p>
+      </section>
+
+      <GoalForm />
+
+      <section className='content'>
+        {goals.length > 0 ? (
+          <div className='goals'>
+            {goals.map((goal) => (
+              <GoalItem key={goal._id} goal={goal} />
+            ))}
+          </div>
+        ) : (
+          <h3>You have not set any goals</h3>
+        )}
+      </section>
+    </>
   )
 }
-}
+
 export default Dashboard
+
+//46:07

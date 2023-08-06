@@ -1,6 +1,6 @@
 // _rfce
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { FaSignInAlt} from "react-icons/fa"
 
 
@@ -73,5 +73,3 @@ function Login() {
 
 export default Login
 
-// terminal cd frontend
-// npm i react-router-dom

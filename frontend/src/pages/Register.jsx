@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
-import {useSelector, useDispatch} from 'react-redux'
+import { useSelector } from "react-redux/es/hooks/useSelector"
+import { useDispatch } from "react-redux"
 import {useNavigate} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import { FaUser } from "react-icons/fa"
@@ -131,5 +132,3 @@ function Register() {
 
 export default Register
 
-// terminal cd frontend
-// npm i react-router-dom

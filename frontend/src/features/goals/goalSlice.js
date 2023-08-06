@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import goalService from './'
+import goalService from './goalService'
 
 const initialState = {
   goals: [],
