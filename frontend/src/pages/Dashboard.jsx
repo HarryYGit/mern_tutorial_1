@@ -1,17 +1,12 @@
-// type rfce to create function
-//import React from 'react'
-import { useEffect } from "react"
-import {useNavigate} from 'react-router-dom'
-import {useSelector, useDispatch} from 'react-redux'
-import GoalForm from "../components/GoalForm"
-import GoalItem from "../components/GoalItem"
-import Spinner from "../components/spinner"
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
+import GoalForm from '../components/GoalForm.jsx'
+import GoalItem from '../components/GoalItem.jsx'
+import Spinner from '../components/spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
 
-
 function Dashboard() {
-
-
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
@@ -19,9 +14,6 @@ function Dashboard() {
   const { goals, isLoading, isError, message } = useSelector(
     (state) => state.goals
   )
-  
-
-
 
   useEffect(() => {
     if (isError) {
@@ -39,9 +31,9 @@ function Dashboard() {
     }
   }, [user, navigate, isError, message, dispatch])
 
-    if (isLoading) {
-      return <Spinner />
-    }
+  if (isLoading) {
+    return <Spinner />
+  }
 
   return (
     <>
