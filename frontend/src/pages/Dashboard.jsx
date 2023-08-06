@@ -36,6 +36,10 @@ function Dashboard() {
     return <Spinner />
   }
 
+// type rfce to create function
+//import React from 'react'
+
+function Dashboard() {
 =======
 // type rfce to create function
 //import React from 'react'
@@ -46,5 +50,5 @@ function Dashboard() {
     <div>Dashboard</div>
   )
 }
-
+}
 export default Dashboard
